@@ -45,4 +45,4 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build -t ${{ env.IMAGE_NAME }}:latest .
-          docker push cmaneu/${{ env.IMAGE_NAME }}:latest
+          docker push ${{ env.IMAGE_NAME }}:latest
