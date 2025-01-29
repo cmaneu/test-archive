@@ -44,5 +44,5 @@ jobs:
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ env.IMAGE_NAME }}:latest .
-          docker push ${{ env.IMAGE_NAME }}:latest
+          docker build -t ghcr.io/cmaneu/test-archive:${{ github.ref_name }} .
+          docker push ghcr.io/cmaneu/test-archive:${{ github.ref_name }}
